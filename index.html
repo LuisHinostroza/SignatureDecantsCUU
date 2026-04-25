@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Signature Decants CUU — Muestras de perfumes de lujo en Chihuahua, México"/>
-<meta property="og:title" content="Signature Decants CUU"/>
-<meta property="og:description" content="Muestras de perfumes de lujo. Descubre tu fragancia ideal."/>
-<title>Signature Decants CUU</title>
+<meta name="description" content="Mini's by Signature Decants — Muestras de perfumes de lujo. Descubre tu fragancia ideal sin comprometer tu presupuesto."/>
+<meta property="og:title" content="Mini's · Signature Decants"/>
+<meta property="og:description" content="Muestras de los mejores perfumes del mundo. Descubre tu fragancia ideal."/>
+<title>Mini's · Signature Decants</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
@@ -535,7 +535,8 @@ section { position: relative; z-index: 1; }
   background: radial-gradient(ellipse at center, rgba(201,168,76,.08) 0%, transparent 70%);
 }
 
-.gift-body { padding: 24px; }
+.gift-img-area img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+.gift-img-area { position: relative; }
 .gift-name {
   font-family: 'Cormorant Garamond', serif;
   font-size: 26px;
@@ -824,7 +825,7 @@ footer {
 
 <!-- Header -->
 <header>
-  <div class="logo">Signature <span>Decants</span> CUU</div>
+  <div class="logo">Mini's <span>· Signature Decants</span></div>
   <ul class="nav-links">
     <li><a href="#catalogo">Catálogo</a></li>
     <li><a href="#regalos">Regalos</a></li>
@@ -840,7 +841,7 @@ footer {
   <div class="hero-bg"></div>
   <div class="hero-ornament"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Chihuahua, México · Perfumería de lujo</div>
+    <div class="hero-eyebrow">Mini's · Perfumería de lujo en muestra</div>
     <h1 class="hero-title">El arte de la<br><em>fragancia</em></h1>
     <p class="hero-subtitle">Muestras de los mejores perfumes del mundo</p>
     <div class="hero-cta">
@@ -897,72 +898,24 @@ footer {
     <div class="section-divider"></div>
   </div>
 
-  <div class="gifts-grid fade-in">
-
-    <div class="gift-card">
-      <div class="gift-badge">Más popular</div>
+  <div id="cajitas-container" class="gifts-grid fade-in">
+    <!-- skeleton mientras carga -->
+    <div class="gift-card" style="opacity:.4;pointer-events:none">
       <div class="gift-img-area">🎁</div>
       <div class="gift-body">
-        <h3 class="gift-name">Cajita Esencial</h3>
-        <p class="gift-desc">La introducción perfecta al mundo de la perfumería de lujo. Tres fragancias cuidadosamente seleccionadas para regalar una experiencia inolvidable.</p>
-        <div class="gift-includes">
-          <div class="gift-includes-title">Incluye</div>
-          <ul>
-            <li>3 muestras de perfume (5ml c/u)</li>
-            <li>Caja decorativa con listón</li>
-            <li>Tarjeta personalizada</li>
-          </ul>
-        </div>
-        <div class="gift-footer">
-          <div class="gift-price">$450 <small>MXN</small></div>
-          <a href="https://wa.me/526144942774?text=Hola!%20Me%20interesa%20la%20Cajita%20Esencial%20para%20el%2010%20de%20mayo" class="gift-cta" target="_blank">Apartar ahora</a>
-        </div>
+        <div style="height:22px;background:rgba(255,255,255,.06);border-radius:4px;margin-bottom:10px"></div>
+        <div style="height:14px;background:rgba(255,255,255,.04);border-radius:4px;margin-bottom:6px"></div>
+        <div style="height:14px;background:rgba(255,255,255,.04);border-radius:4px;width:70%"></div>
       </div>
     </div>
-
-    <div class="gift-card">
-      <div class="gift-badge" style="background:var(--bg);color:var(--gold);border:1px solid var(--gold-dim)">Lujo</div>
+    <div class="gift-card" style="opacity:.25;pointer-events:none">
       <div class="gift-img-area">✨</div>
       <div class="gift-body">
-        <h3 class="gift-name">Cajita Signature</h3>
-        <p class="gift-desc">Nuestra selección premium. Cinco fragancias icónicas de las mejores casas de perfumería del mundo, presentadas en caja de lujo.</p>
-        <div class="gift-includes">
-          <div class="gift-includes-title">Incluye</div>
-          <ul>
-            <li>5 muestras de perfume (5-10ml c/u)</li>
-            <li>Caja premium con cierre magnético</li>
-            <li>Tarjeta personalizada</li>
-            <li>Guía de fragancias</li>
-          </ul>
-        </div>
-        <div class="gift-footer">
-          <div class="gift-price">$850 <small>MXN</small></div>
-          <a href="https://wa.me/526144942774?text=Hola!%20Me%20interesa%20la%20Cajita%20Signature%20para%20el%2010%20de%20mayo" class="gift-cta" target="_blank">Apartar ahora</a>
-        </div>
+        <div style="height:22px;background:rgba(255,255,255,.06);border-radius:4px;margin-bottom:10px"></div>
+        <div style="height:14px;background:rgba(255,255,255,.04);border-radius:4px;margin-bottom:6px"></div>
+        <div style="height:14px;background:rgba(255,255,255,.04);border-radius:4px;width:70%"></div>
       </div>
     </div>
-
-    <div class="gift-card">
-      <div class="gift-img-area">💝</div>
-      <div class="gift-body">
-        <h3 class="gift-name">Cajita Personalizada</h3>
-        <p class="gift-desc">¿Tienes en mente fragancias específicas? Armamos tu cajita a la medida. Elige tú misma o déjanos sorprenderte según sus gustos.</p>
-        <div class="gift-includes">
-          <div class="gift-includes-title">Incluye</div>
-          <ul>
-            <li>Fragancias a tu elección</li>
-            <li>Caja decorativa personalizada</li>
-            <li>Tarjeta con mensaje especial</li>
-            <li>Asesoría sin costo</li>
-          </ul>
-        </div>
-        <div class="gift-footer">
-          <div class="gift-price">Desde <small>$350 MXN</small></div>
-          <a href="https://wa.me/526144942774?text=Hola!%20Quiero%20armar%20una%20cajita%20personalizada" class="gift-cta" target="_blank">Cotizar</a>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -977,22 +930,22 @@ footer {
         <span class="contact-icon">💬</span>
         <span>+52 614 494 2774</span>
       </a>
-      <a href="https://instagram.com/signaturedecantscuu" class="contact-item" target="_blank">
+      <a href="https://instagram.com/minisignaturedecants" class="contact-item" target="_blank">
         <span class="contact-icon">📷</span>
-        <span>@signaturedecantscuu</span>
+        <span>@minisignaturedecants</span>
       </a>
-      <span class="contact-item">
-        <span class="contact-icon">📍</span>
-        <span>Chihuahua, México</span>
-      </span>
+      <a href="https://minisignaturedecants.com" class="contact-item" target="_blank">
+        <span class="contact-icon">🌐</span>
+        <span>minisignaturedecants.com</span>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
 <footer>
-  <div class="footer-logo">Signature Decants CUU</div>
-  <div class="footer-copy">© 2025 · Chihuahua, México · Todos los derechos reservados</div>
+  <div class="footer-logo">Mini's · Signature Decants</div>
+  <div class="footer-copy">© 2025 · minisignaturedecants.com · Todos los derechos reservados</div>
 </footer>
 
 <!-- Modal detalle producto -->
@@ -1194,8 +1147,74 @@ function initObserver(){
   els.forEach(function(el){ observer.observe(el); });
 }
 
+// ── Cargar cajitas desde Firebase ──────────────────────
+function cargarCajitas(){
+  db.collection('cajitas').orderBy('orden').get().then(function(snap){
+    var cajitas = snap.docs.map(function(d){ return Object.assign({id:d.id}, d.data()); });
+    renderCajitas(cajitas);
+  }).catch(function(err){
+    console.error(err);
+    document.getElementById('cajitas-container').innerHTML =
+      '<div style="text-align:center;padding:40px;color:var(--text-muted);grid-column:1/-1">No se pudieron cargar las cajitas. Contáctanos por WhatsApp.</div>';
+  });
+}
+
+function renderCajitas(cajitas){
+  var container = document.getElementById('cajitas-container');
+  if(!cajitas.length){
+    container.innerHTML = '<div style="text-align:center;padding:40px;color:var(--text-muted);font-family:\'Cormorant Garamond\',serif;font-size:20px;font-style:italic;grid-column:1/-1">Próximamente nuevas cajitas</div>';
+    return;
+  }
+
+  var html = '';
+  cajitas.forEach(function(c){
+    // Imagen o emoji de fondo
+    var imgHtml = c.foto
+      ? '<img src="'+c.foto+'" alt="'+c.nombre+'" loading="lazy"/><div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(201,168,76,.06) 0%,transparent 70%)"></div>'
+      : '<span style="font-size:64px;position:relative;z-index:1">🎁</span>';
+
+    // Badge/etiqueta
+    var badgeHtml = c.etiqueta
+      ? '<div class="gift-badge">'+c.etiqueta+'</div>'
+      : '';
+
+    // Lista de incluye
+    var incluyeHtml = '';
+    if(c.incluye && c.incluye.length){
+      incluyeHtml = '<div class="gift-includes"><div class="gift-includes-title">Incluye</div><ul>';
+      c.incluye.forEach(function(item){ if(item) incluyeHtml += '<li>'+item+'</li>'; });
+      incluyeHtml += '</ul></div>';
+    }
+
+    // Precio con prefijo
+    var precioHtml = c.precioPrefix
+      ? c.precioPrefix + '<small>$' + (c.precio||0) + ' MXN</small>'
+      : '$' + (c.precio||0) + ' <small>MXN</small>';
+
+    // CTA según tipo
+    var ctaTexto = c.tipo === 'personalizable' ? 'Cotizar' : 'Apartar ahora';
+    var waMsg = encodeURIComponent('Hola! Me interesa la '+c.nombre+'. ¿Pueden darme más información?');
+
+    html += '<div class="gift-card">';
+    html += badgeHtml;
+    html += '<div class="gift-img-area">'+imgHtml+'</div>';
+    html += '<div class="gift-body">';
+    html += '<h3 class="gift-name">'+c.nombre+'</h3>';
+    html += '<p class="gift-desc">'+(c.descripcion||'')+'</p>';
+    html += incluyeHtml;
+    html += '<div class="gift-footer">';
+    html += '<div class="gift-price">'+precioHtml+'</div>';
+    html += '<a href="https://wa.me/'+WA_NUMBER+'?text='+waMsg+'" class="gift-cta" target="_blank">'+ctaTexto+'</a>';
+    html += '</div></div></div>';
+  });
+
+  container.innerHTML = html;
+  container.classList.add('visible');
+}
+
 // ── Init ───────────────────────────────────────────────
 cargarProductos();
+cargarCajitas();
 initObserver();
 </script>
 </body>
